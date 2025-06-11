@@ -1,48 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spin Quizzy</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #333;
     }
-    #wheel {
-      width: 300px;
-      height: 300px;
-      border: 10px solid #ccc;
-      border-radius: 50%;
-      margin: 20px auto;
-      background: conic-gradient(
-        #ff9999 0% 25%,
-        #99ff99 25% 50%,
-        #9999ff 50% 75%,
-        #ffff99 75% 100%
-      );
+    h1, h2, h3 {
+      color: #2c3e50;
     }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .contact, .permissions {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    a.download-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #2c7be5;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    a.download-link:hover {
+      background-color: #1a5fcc;
     }
   </style>
 </head>
 <body>
 
   <h1>Spin Quizzy</h1>
-  <div id="wheel"></div>
-  <button onclick="spin()">Spin the Wheel</button>
-  <p id="result"></p>
+  <p>Challenge your brain with fun and addictive trivia! Play, learn, and compete in quizzes across categories.</p>
 
-  <script>
-    function spin() {
-      const sections = ['Question 1', 'Question 2', 'Question 3', 'Question 4'];
-      const result = sections[Math.floor(Math.random() * sections.length)];
-      document.getElementById('result').textContent = 'You got: ' + result;
-    }
-  </script>
+  <section class="section">
+    <h2>Product Features</h2>
+    <ul>
+      <li>Visual &amp; Audio Feedback</li>
+      <li>Scoring System</li>
+      <li>Randomized Questions</li>
+      <li>Timed Questions</li>
+      <li>Multiple Categories</li>
+      <li>Interactive Quiz Gameplay</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Product Description</h2>
+    <p>Test your trivia skills with Spin Quizzy, an engaging quiz app featuring a variety of categories and fun challenges! Answer multiple-choice questions and track your score as you progress through the quiz. With each question, gain new insights and sharpen your knowledge. Whether you're a quiz enthusiast or just looking for a fun way to learn, Spin Quizzy is your ultimate quiz companion.</p>
+  </section>
+
+  <section class="section">
+    <h2>Technical Details</h2>
+    <ul>
+      <li><strong>Release Date:</strong> 2025</li>
+      <li><strong>First Listed on:</strong> May 28, 2025</li>
+      <li><strong>Version:</strong> 6</li>
+      <li><strong>Size:</strong> 13.9MB</li>
+      <li><strong>Minimum OS:</strong> Android 5.0</li>
+      <li><strong>Approx. Download Time:</strong> Less than 2 minutes</li>
+    </ul>
+  </section>
+
+  <section class="section permissions">
+    <h2>Permissions Required</h2>
+    <ul>
+      <li>Ads</li>
+      <li>Internet Access</li>
+      <li>Amazon ID if using Amazon devices</li>
+    </ul>
+  </section>
+
+  <section class="section contact">
+    <h2>Developer Information</h2>
+    <p><strong>Developer:</strong> Xtention</p>
+    <p><strong>Email:</strong> <a href="mailto:ukaccount@hotmail.co.uk">ukaccount@hotmail.co.uk</a></p>
+  </section>
+
+  <section class="section">
+    <h2>User Data &amp; Privacy</h2>
+    <p>The developer has indicated that this app does not collect or transfer user data to third parties.</p>
+  </section>
+
+  <section class="section">
+    <h2>Download</h2>
+    <p>Download from Play store or Amazon store</p>
+    <!-- You can replace the href values with actual store links -->
+    <a href="#" class="download-link">Google Play Store</a>
+    <a href="#" class="download-link" style="margin-left: 1rem;">Amazon Store</a>
+  </section>
 
 </body>
 </html>
